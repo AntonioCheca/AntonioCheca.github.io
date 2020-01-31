@@ -18,3 +18,5 @@ Mi hola mundo del blog. Voy a intentar escribir una vez a la semana sobre temas 
 - Recopilación de problemas de razonamiento matemático
 
 - Inserción de soluciones conocidas en Reinforcement Learning, o también llamado Apprenticeship Learning
+
+Un saludo.
