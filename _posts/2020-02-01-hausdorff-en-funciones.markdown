@@ -4,7 +4,9 @@ title:  "Tomar el límite de una sucesión de funciones por sus gráficas"
 date:   2020-02-01 18:00:00 +0000
 categories:
 ---
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
 Normalmente cuando se estudian sucesiones de funciones $$f_n:A \rightarrow \mathbb{R}$$, con $$A\subset \mathbb{R}$$, se suelen estudiar la convergencia punto a punto y la convergencia uniforme. Ambos conceptos son bastante naturales, y de hecho tienen una interpretación geométrica muy sencilla. El límite punto a punto es simplemente repetir el proceso de convergencia que ya se crea en sucesiones $$a_n$$ de números reales. A mí me gusta imaginar que para cada punto aparecen dos ventanas negras gigantes impidiéndote ver el resto, ya que solo te importa la sucesión del único punto que puedes ver.
 
