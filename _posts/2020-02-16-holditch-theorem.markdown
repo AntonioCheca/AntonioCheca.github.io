@@ -51,10 +51,10 @@ siendo $$D$$ la curva trazada por $$\delta$$. Volviendo a $$A(S)$$, podemos apli
 
 $$A(S) = - \int_C \langle (x,0), \nu \rangle = -\int_0^1 \langle (x(\beta(t)),0), \nu(\beta(t))\rangle dt$$
 
-Pensemos un segundo que si $$\beta(t) = (\beta_1(t), \beta_2(t))$$ entonces $$x(\beta(t)) = \beta_1(t)$$ y $$\nu(\beta(t)) = (-\beta_2'(t), \beta_1(t))$$. En efecto, $$T_{\beta(t)}C$$ viene definido por el tangente $$\beta'(t) = (\beta_1'(t), \beta_2'(t))$$, por lo que el $$\nu$$ que era normal a $$T_{\beta(t)}C$$ es proporcional a $$(-\beta_2'(t), \beta(t))$$. Como $$\beta$$ recorría $$C$$ en sentido anti-horario, tenemos que $$\nu$$, definido como aquel normal que apunta hacia $$S$$, debe ser un giro de $$\pi/2$$ en sentido anti-horario, definido por la matriz $$\left(\begin{array}{cc}
+Pensemos un segundo que si $$\beta(t) = (\beta_1(t), \beta_2(t))$$ entonces $$x(\beta(t)) = \beta_1(t)$$ y $$\nu(\beta(t)) = (-\beta_2'(t), \beta_1'(t))$$. En efecto, $$T_{\beta(t)}C$$ viene definido por el tangente $$\beta'(t) = (\beta_1'(t), \beta_2'(t))$$, por lo que el $$\nu$$ que era normal a $$T_{\beta(t)}C$$ es proporcional a $$(-\beta_2'(t), \beta_1'(t))$$. Como $$\beta$$ recorría $$C$$ en sentido anti-horario, tenemos que $$\nu$$, definido como aquel normal que apunta hacia $$S$$, debe ser un giro de $$\pi/2$$ en sentido anti-horario, definido por la matriz $$\left(\begin{array}{cc}
 0 & -1\\
 1 & 0
-\end{array}\right)$$, dejándonos $$\nu(\beta(t)) = (-\beta_2'(t), \beta_1(t))$$. Así que obtenemos:
+\end{array}\right)$$, dejándonos $$\nu(\beta(t)) = (-\beta_2'(t), \beta_1'(t))$$. Así que obtenemos:
 
 $$A(S) = \int_0^1 \beta_1(t)\beta_2'(t)dt = \int_0^1 (\delta_1(t)+b\cos(\theta(t))) (\delta_2'(t) + b \cos(\theta(t)) \theta'(t))dt,$$
 
