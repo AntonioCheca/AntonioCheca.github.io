@@ -41,7 +41,7 @@ Y con todo esto, ya tenemos todas las partes necesarias para hacer la demostraci
 ---
 **Demostración del teorema de Holditch**: Sea $$S$$ la región delimitada por $$C$$, es un conjunto compacto y conexo por ser $$C$$ una curva simple y cerrada. Sea $$X(x,y) = (x,0)$$, es un campo diferenciable así que podemos aplicar el teorema de la divergencia. En este caso, $$\text{div} X = 1$$ así que:
 
-$$A(S) = \int_S 1 = \int_S \text{div} X =- \int_C \langle (x,0), \nu \rangle.$$
+$$A(S) = \int_S 1 = \int_S \text{div} X =- \int_C \langle X, \nu \rangle.$$
 
 Para integrar en $$C$$ nos hace falta una curva que la parametrice, pero podemos usar las expresiones de $$\alpha$$ y $$\beta$$ debido a que recorrían $$C$$. Sea $$S_\delta$$ la región delimitada por la curva $$\delta$$. Nuestro objetivo es probar que $$A(S)-A(S_\delta) = \pi a b$$ (nótese que sabemos que $$S_\delta \subset S$$ ya que $$D_t\in S$$ para todo $$t$$ por la convexidad de $$C$$). Así que aplicamos el teorema de la divergencia a $$S_\delta$$ y obtenemos:
 
@@ -49,9 +49,9 @@ $$A(S_\delta) = \int_{S_\delta} 1 = \int_S \text{div} X = - \int_D \langle (x,0)
 
 siendo $$D$$ la curva trazada por $$\delta$$. Volviendo a $$A(S)$$, podemos aplicar que $$\beta(t)$$ es una parametrización y que, además, $$\beta(t) = \delta(t) + b(\cos(\theta(t)), \sin(\theta(t)))$$ ya que recordemos que el segmento que unía $$\alpha(t), \delta(t)$$ y $$\beta(t)$$ tenía dirección $$\theta$$ y la distancia entre $$\delta$$ y los otros dos puntos estaba fija a $$a$$ y a $$b$$. De esta forma, tenemos:
 
-$$A(S) = - \int_C \langle (x,0), \nu \rangle = -\int_0^1 \langle (x(\beta(t)),0), \nu(\beta(t))\rangle dt$$
+$$A(S) = - \int_C \langle (x,0), \nu \rangle = -\int_0^1 \langle X(\beta(t)), \nu(\beta(t))\rangle dt$$
 
-Pensemos un segundo que si $$\beta(t) = (\beta_1(t), \beta_2(t))$$ entonces $$x(\beta(t)) = \beta_1(t)$$ y $$\nu(\beta(t)) = (-\beta_2'(t), \beta_1'(t))$$. En efecto, $$T_{\beta(t)}C$$ viene definido por el tangente $$\beta'(t) = (\beta_1'(t), \beta_2'(t))$$, por lo que el $$\nu$$ que era normal a $$T_{\beta(t)}C$$ es proporcional a $$(-\beta_2'(t), \beta_1'(t))$$. Como $$\beta$$ recorría $$C$$ en sentido anti-horario, tenemos que $$\nu$$, definido como aquel normal que apunta hacia $$S$$, debe ser un giro de $$\pi/2$$ en sentido anti-horario, definido por la matriz $$\left(\begin{array}{cc}
+Pensemos un segundo que si $$\beta(t) = (\beta_1(t), \beta_2(t))$$ entonces $$X(\beta(t)) = \beta_1(t)$$ y $$\nu(\beta(t)) = (-\beta_2'(t), \beta_1'(t))$$. En efecto, $$T_{\beta(t)}C$$ viene definido por el tangente $$\beta'(t) = (\beta_1'(t), \beta_2'(t))$$, por lo que el $$\nu$$ que era normal a $$T_{\beta(t)}C$$ es proporcional a $$(-\beta_2'(t), \beta_1'(t))$$. Como $$\beta$$ recorría $$C$$ en sentido anti-horario, tenemos que $$\nu$$, definido como aquel normal que apunta hacia $$S$$, debe ser un giro de $$\pi/2$$ en sentido anti-horario, definido por la matriz $$\left(\begin{array}{cc}
 0 & -1\\
 1 & 0
 \end{array}\right)$$, dejándonos $$\nu(\beta(t)) = (-\beta_2'(t), \beta_1'(t))$$. Así que obtenemos:
