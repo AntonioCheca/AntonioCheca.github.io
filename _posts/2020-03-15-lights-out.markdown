@@ -53,7 +53,7 @@ Es más, sea $$A$$ la matriz de coeficientes de dicho sistema de ecuaciones, sea
 \end{array}\right)
 $$
 
-Si os lo estáis preguntando, la submatriz es triangular superior, no es difícil de probar. Lo cual permite, una vez que conocemos $$b$$, resolver las primeras cuatro filas de la solución, que es lo que consigue perseguir las luces en la primera pasada. Esto es
+Si os lo estáis preguntando, la submatriz es triangular superior, no es difícil de probar. Lo cual permite, una vez que conocemos $$b$$, resolver las primeras cuatro filas de la solución, que es lo que consigue perseguir las luces en la primera pasada.
 
 Por otro lado, nos hemos dejado cinco ecuaciones, las cinco primeras. Si miramos el rango de $$A$$ comprobaremos que tiene rango $$23$$, lo que significa que de hecho, solo nos hacen falta tres ecuaciones más, hay dos que no son necesarias. Lo que explica por qué solo necesitábamos tres patrones que recordar a la hora de la segunda pasada en perseguir las luces. Cada patrón se corresponde a una ecuación lineal, uno por si $$a_{21}$$ está activo tras la primera pasada, otro para $$a_{22}$$ y otro para $$a_{23}$$. Si habéis visto el vídeo, de hecho son justo estos patrones los que se comentan.
 
